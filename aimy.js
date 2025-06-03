@@ -3,10 +3,10 @@ const input = document.getElementById("user-input");
 const output = document.getElementById("output");
 
 const responses = {
-  help: "Available commands: HELP, STATUS, LOGS, ACCESS 4042",
+  help: "Available commands: HELP, STATUS, LOGS, INFO, LOGIN",
   status: "A.I.M.Y. SYSTEM ONLINE. TEMPORAL CACHE: 68%. INTEGRITY: 91%",
-  logs: "LAST LOG: 03/17/2025 — \"Rose initiated override procedure. Savanna objected. Host conflict unresolved.\"",
-  "access 4042": "Access denied. Temporal clearance required.",
+  logs: "LAST LOG: 03/17/2025 — \"Rose initiated override procedure. Patient objected. Host conflict unresolved.\"",
+  "access 42": "Access denied. Temporal clearance required.",
 };
 
 function appendOutput(text) {
