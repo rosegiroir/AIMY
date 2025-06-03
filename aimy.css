@@ -39,8 +39,8 @@ body {
   display: flex;
   align-items: center;
   border-top: 1px solid #00ffcc;
-  padding top: 0.5rem;
-  margin-top: 0.5rem;
+  padding-top: 1.0rem;
+  margin-top: 1.0rem;
 }
 
 input[type="text"] {
