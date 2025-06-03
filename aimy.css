@@ -1,0 +1,31 @@
+body {
+  background: black;
+  color: #00ffcc;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 1rem;
+}
+
+#screen {
+  max-width: 800px;
+  margin: auto;
+  white-space: pre-wrap;
+}
+
+#output {
+  margin-bottom: 1rem;
+}
+
+.prompt {
+  color: #0ff;
+}
+
+input[type="text"] {
+  background: black;
+  border: none;
+  color: #00ffcc;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 80%;
+  outline: none;
+}
