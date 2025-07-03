@@ -6,6 +6,46 @@
   <link rel="stylesheet" href="aimy.css" />
 </head>
 <body>
+  <input id="commandBox" placeholder="Enter command..." />
+<div id="response"></div>
+<audio id="audioSavanna" src="savanna_whisper.mp3"></audio>
+
+<script>
+const triggers = {
+  SAV: () => {
+    document.getElementById("response").innerText =
+      "[AIMY] memory error: fragments leak / love loops / name burned into cache.";
+  },
+  SAVANNA: () => {
+    document.getElementById("response").innerText = "[AIMY] ::: she’s still singing :::";
+    document.getElementById("audioSavanna").play();
+    document.body.classList.add("glitch-effect");
+  },
+  ROSE: () => {
+    document.getElementById("response").innerText = "[AIMY] He's watching.";
+    document.body.style.backgroundColor = "#440000";
+  },
+  BLINK: () => {
+    window.location.href = "blink.html"; // Redirect to glitched page
+  },
+  CEA: () => {
+    document.getElementById("response").innerText = "[AIMY] You are not authorized.";
+    // Add static sound logic if you want
+  }
+};
+
+document.getElementById("commandBox").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const input = e.target.value.trim().toUpperCase();
+    if (triggers[input]) {
+      triggers[input]();
+    } else {
+      document.getElementById("response").innerText = "[AIMY] Unknown input.";
+    }
+    e.target.value = "";
+  }
+});
+</script>
   <div id="screen">
     <div id="output"></div>
     <form id="input-form">
